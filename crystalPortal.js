@@ -515,7 +515,7 @@ function modifyOCValue(e)
 
     const maxReference = upgradeSet === 'output' ? outCostTypes[index].max : 500;
 
-    if (newValue === NaN) { e.target.value = oldValue; }
+    if (isNaN(newValue)) { e.target.value = oldValue; }
     else
     {
         if (newValue < 0 || newValue > maxReference) { e.target.value = oldValue; }
@@ -835,7 +835,7 @@ function modifySValue(e)
 
     const maxReference = specialTypes[index].max;
 
-    if (newValue === NaN) { e.target.value = oldValue; }
+    if (isNaN(newValue)) { e.target.value = oldValue; }
     else
     {
         if (newValue < 0 || newValue > maxReference) { e.target.value = oldValue; }
