@@ -119,9 +119,9 @@ let destroyCurrentPanel = null;
 
 function openDefaultPanel()
 {
-    // constructPerkPanel(navDim.width, window.innerHeight - navDim.height);
-    // constructCrystalPanel(navDim.width, window.innerHeight - navDim.height, 'otu');
-    constructSimResetPanel(navDim.width, window.innerHeight - navDim.height);
+    constructPerkPanel(navDim.width, window.innerHeight - navDim.height);
+//     constructCrystalPanel(navDim.width, window.innerHeight - navDim.height, 'otu');
+//     constructSimResetPanel(navDim.width, window.innerHeight - navDim.height);
     navButtons[0].active = true;
     activeNavLink = navButtons[0].elem;
 
