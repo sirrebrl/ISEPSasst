@@ -549,7 +549,7 @@ function adjustSimResetValue(e)
 
         const newValue = parseInt(e.target.value)
 
-        if (newValue === NaN) { e.target.value = oldValue; }
+        if (isNaN(newValue)) { e.target.value = oldValue; }
         else
         {
             if (newValue < 0) { e.target.value = oldValue; }
@@ -565,7 +565,7 @@ function adjustSimResetValue(e)
 
         const newValue = parseInt(e.target.value)
 
-        if (newValue === NaN) { e.target.value = oldValue; }
+        if (isNaN(newValue)) { e.target.value = oldValue; }
         else
         {
             if (newValue < 0) { e.target.value = oldValue; }
@@ -583,7 +583,7 @@ function adjustSimResetValue(e)
 
         const newValue = parseInt(e.target.value)
 
-        if (newValue === NaN) { e.target.value = oldValue; }
+        if (isNaN(newValue)) { e.target.value = oldValue; }
         else
         {
             if (newValue < 0) { e.target.value = oldValue; }
