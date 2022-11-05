@@ -430,7 +430,7 @@ function perkIsSelected(perkID)
 function adjustInfPerk(e)
 {
     const numCheck = parseInt(e.target.value)
-    if (numCheck === NaN) { e.target.value = perkData.infinity; }
+    if (isNaN(numCheck)) { e.target.value = perkData.infinity; }
     else
     {
         if (numCheck < 0) { e.target.value = perkData.infinity; }
